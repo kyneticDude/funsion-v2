@@ -1,0 +1,108 @@
+// Imports
+@import "../../bower_components/bootstrap/less/bootstrap.less";
+@import "../../bower_components/font-awesome/less/font-awesome.less";
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700|Source+Sans+Pro:400,600,300);
+
+// Core CSS
+@import "variables-custom.less";
+@import "type-custom.less";
+@import "topbar.less";
+@import "navbar-custom.less";
+
+// Custom Styles
+a {
+    color: #555;
+}
+
+.hero {
+    background: url(../images/vinylmeltdown_dj_mmthis.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    height: 500px;
+    padding: 40px;
+    
+    h2 {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 60px;
+        margin-bottom: 0;
+    }
+    
+    .hero-caption-box {
+        width: 40%;
+        margin-right: auto;
+    }
+    .post-meta {
+        font-size: 14px;
+    }
+}
+
+// Images
+.post-image {
+    display: block;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    
+    a img {
+        width: 100%;
+        height: auto;
+        opacity: 1;
+        -webkit-transform: scale3d(1, 1, 1);
+        -moz-transform: scale3d(1, 1, 1);
+        -ms-transform: scale3d(1, 1, 1);
+        -o-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+}
+
+// Type
+.post-meta {
+    font-size: 12px;
+    
+    li {
+        display: inline-block;
+        
+        li {
+            &:after {
+                content: '/';
+                color: #fff;
+                padding: 0 5px;
+            }
+        }
+        
+    }
+}
+.post-author {
+    font-size: 15px;
+    margin-bottom: 0;
+}
+.panel-post-heading {
+    padding-left: 0;
+}
+
+// Utilities
+.vert-holder {
+    display: table;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.vert-holder-content {
+    display: table-cell;
+    vertical-align: bottom;
+}
+.white-text {
+    color: #fff;
+}
+.no-mg {
+    margin: 0;
+}

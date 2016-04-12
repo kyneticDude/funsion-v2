@@ -1,0 +1,36 @@
+//
+// Navbars
+// --------------------------------------------------
+
+
+.navbar-brand {
+  padding: 15px 80px 15px 15px!important;
+}
+
+// Default navbar
+.navbar-default {
+
+  .navbar-brand {
+    font-family: "bebas-neue", sans-serif;
+      font-size: 45px;
+      color: #E64C3C;
+  }
+
+  .navbar-nav {
+    > li > a {
+      &:hover,
+      &:focus {
+        color: #E64C3C;
+        background-color: transparent!important;
+      }
+    }
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: #E64C3C;
+        background-color: transparent!important;
+      }
+    }
+  }
+}
