@@ -7207,6 +7207,73 @@ button.close {
 .fa-percent:before {
   content: "\f295";
 }
+.post {
+  margin-bottom: 20px;
+}
+.post .post-summary {
+  min-height: 345px;
+}
+.post .post-summary .post-title {
+  white-space: normal;
+}
+.post .post-summary .post-excerpt {
+  margin: 0 0 15px;
+  line-height: 1.65;
+  color: #919191;
+  font-size: 0.95em;
+}
+.post .post-summary .post-meta {
+  position: relative;
+  z-index: 1;
+  margin: 0 0 15px;
+  padding: 15px 0 0;
+  min-height: 33px;
+  list-style: none;
+  font-size: 12px;
+  color: #bdbdbd;
+}
+.post .post-summary .post-meta:before {
+  content: " ";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 40px;
+  height: 1px;
+  background-color: #dfdfdf;
+}
+.post .post-summary .post-meta .post-date {
+  margin-right: 25px;
+}
+.post .post-summary .post-meta li {
+  display: block;
+  float: left;
+  margin-right: 10px;
+}
+.post .post-summary .post-meta .fa {
+  margin-right: 5px;
+}
+.post .post-image {
+  display: block;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+.post .post-image a img {
+  width: 100%;
+  height: auto;
+  opacity: 1;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
 .l-topbar {
   background-color: #fff;
   font-size: 12px;
@@ -7257,31 +7324,6 @@ a {
 }
 .hero .post-meta {
   font-size: 14px;
-}
-.post-image {
-  display: block;
-  position: relative;
-  z-index: 1;
-  text-align: center;
-}
-.post-image a img {
-  width: 100%;
-  height: auto;
-  opacity: 1;
-  -webkit-transform: scale3d(1, 1, 1);
-  -moz-transform: scale3d(1, 1, 1);
-  -ms-transform: scale3d(1, 1, 1);
-  -o-transform: scale3d(1, 1, 1);
-  transform: scale3d(1, 1, 1);
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  backface-visibility: hidden;
 }
 .post-meta {
   font-size: 12px;
