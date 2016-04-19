@@ -1,0 +1,24 @@
+.navbar-brand {
+  padding: 15px 80px 15px 15px!important;
+}
+@media (max-width: 768px) {
+  .navbar {
+    margin-bottom: 0px;
+  }
+}
+.navbar-default .navbar-brand {
+  font-family: "bebas-neue", sans-serif;
+  font-size: 45px;
+  color: #E64C3C;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #E64C3C;
+  background-color: transparent!important;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #E64C3C;
+  background-color: transparent!important;
+}

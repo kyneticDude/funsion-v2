@@ -1,0 +1,11 @@
+.l-topbar {
+  background-color: #fff;
+  font-size: 12px;
+  line-height: 17px;
+}
+.l-topbar .l-topbar--navback {
+  padding: 15px 0;
+}
+.l-topbar ul {
+  margin-bottom: 0!important;
+}
