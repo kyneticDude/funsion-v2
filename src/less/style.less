@@ -20,6 +20,11 @@ a {
     background-size: cover;
     height: 500px;
     padding: 40px;
+    @media (max-width: 768px) {
+        width: 100%;
+        background-position: 36% 50%;
+        height: 400px;
+    }
     
     h2 {
         font-family: "Bebas Neue", sans-serif;
@@ -30,6 +35,9 @@ a {
     .hero-caption-box {
         width: 40%;
         margin-right: auto;
+        @media (max-width: 425px) {
+            width: auto;
+        }
     }
     .post-meta {
         font-size: 14px;
@@ -62,6 +70,64 @@ a {
 }
 .panel-post-heading {
     padding-left: 0;
+}
+.box-header {
+    position: relative;
+    z-index: 1;
+    margin: 0 0 35px;
+    .title {
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        margin: 0;
+        padding-right: 20px;
+        text-transform: uppercase;
+        font-size: 26px;
+        font-weight: bold;
+        background-color: #fff;
+    }
+    &.has-title:after {
+        position: absolute;
+        z-index: 0;
+        top: 13px;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background-color: rgb(245, 245, 245);
+        content: " ";
+    }
+}
+#sidebar {
+    .widget-title {
+        position: relative;
+        z-index: 1;
+        margin-bottom: 20px;
+        line-height: 33px;
+        &:after {
+            position: absolute;
+            z-index: 0;
+            top: 13px;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background-color: rgb(245, 245, 245);
+            content: " ";
+        }
+        .title {
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            margin: 0;
+            padding-right: 15px;
+            font-size: 18px;
+            letter-spacing: -0.4px;
+            text-transform: uppercase;
+            font-weight: bold;
+            background-color: #fff;
+        }
+
+    }
+    
 }
 
 // Utilities

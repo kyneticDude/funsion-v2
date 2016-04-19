@@ -137,20 +137,47 @@
     }
     @media only screen and (min-width: 768px) {
             .post-title {
-            font-size: 22px;
-        }
+                font-size: 22px;
+            }
     }
     .post-image {
         float: left;
         width: 40%;
+    }
+    @media (max-width: 425px) {
+        .post-image {
+            float: none;
+            width: 100%;
+        }
     }
     .post-details {
         float: left;
         width: 60%;
         padding-left: 30px;
     }
+    @media (max-width: 425px) {
+        .post-details {
+            float: none;
+            width: 100%;
+            padding-left: 0px;
+        }
+    }
     .post-title {
         width: 100%;
     }
     
+}
+@media (max-width: 768px) {
+    #sidebar {
+        .post-image {
+            float: none;
+            width: 100%;
+        }
+        .post-details {
+            float: none;
+            width: auto;
+            padding-left: 0;
+        }
+    }
+
 }
